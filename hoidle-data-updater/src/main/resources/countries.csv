@@ -1,0 +1,92 @@
+Name;Continents;Ideology;Historical faction;Research slots;National focus tree;Access to the see;Train researched;Formable nation
+Kingdom of Afghanistan;Asia;Non-Aligned;None;2;true;false;false;Persian Empire
+Albanian Kingdom;Europe;Non-Aligned;None;2;false;true;false;None
+Argentina;South America;Non-Aligned;None;2;true;true;true;None
+Sultanate of Aussa;Africa;Non-Aligned;None;2;true;false;false;Horn of Africa
+Australia;Oceania;Democratic;Allies;2;true;true;true;None
+Austria;Europe;Non-Aligned;None;3;true;false;true;Austria-Hungary, European Federation, Holy Roman Empire
+Belgian Congo;Africa;Non-Aligned;Allies;2;true;true;true;East Africa, Latin Africa
+Belgium;Europe;Democratic;Allies;3;true;true;true;European Federation
+Bhutan;Asia;Non-Aligned;None;2;false;false;false;None
+Bolivian Republic;South America;Democratic;Allies;2;false;false;false;Plurinational State of Bolivia, Peru-Bolivian Confederation
+Second Brazilian Republic;South America;Democratic;Allies;2;true;true;true;None
+British Burma;Asia;Democratic;Allies;2;false;true;false;None
+British Malaya;Asia;Democratic;Allies;3;false;true;false;Greater Indonesian Confederacy
+British Raj;Asia;Non-Aligned;Allies;2;true;true;true;None
+Bulgaria;Europe;Non-Aligned;Axis, Allies;3;true;true;true;None
+Dominion of Canada;North America;Democratic;Allies;3;true;true;true;None
+Chile;South America, Oceania;Democratic;Allies;2;true;true;true;None
+China;Asia;Non-Aligned;Allies;2;true;true;true;None
+Columbia;South America;Democratic;Allies;2;false;true;false;Gran Colombia
+Communist China;Asia;Communist;Allies;2;true;false;false;None
+Costa Rica;North America;Democratic;Allies;2;false;true;false;United States of Central America
+Cuba;North America;Democratic;Allies;2;false;true;false;Antillean Confederation
+Czechoslovakia;Europe;Democratic;Allies;3;true;false;true;Austria-Hungary
+Denmark;Europe, North America;Democratic;Axis;3;true;true;true;Baltic Sea Republic, Nordic League, North Sea Federation, Scandinavia
+Dominican Republic;North America;Fascist;Allies;2;false;true;false;Antillean Confederation, Hispaniola
+Dutch East Indies;Asia, Oceania;Non-Aligned;Allies;2;false;true;false;Greater Indonesian Confederacy
+Ecuador;South America;Democratic;Allies;2;false;true;false;Gran Colombia
+El Salvador;North America;Fascist;Allies;2;false;true;false;United States of Central America
+Estonia;Europe;Non-Aligned;None;3;true;true;true;Baltic Federation, Nordic League
+Ethiopia;Africa;Non-Aligned;Allies;2;true;false;true;Aksumite Empire, Empire of Solomon, Empire of Zion, Horn of Africa
+Finland;Europe;Non-Aligned;Axis, Allies;3;true;true;true;Nordic League
+France;Europe, Africa, North America, South America, Asia, Oceania;Democratic;Allies, Axis;3;true;true;true;European Federation
+German Reich;Europe;Fascist;Axis;4;true;true;true;European Federation, Greater Germanic Reich, Greater German Proletarian State, Holy Roman Empire
+Kingdom of Greece;Europe;Non-Aligned;Allies;3;true;true;false;Byzantine Empire, Hellas, Macedonian Empire
+Guangxi Clique;Asia;Non-Aligned;Allies;2;true;true;false;None
+Guatemala;North America;Non-Aligned;Allies;2;false;true;false;United States of Central America
+Haiti;North America;Democratic;Allies;2;false;true;false;Antillean Confederation, Hispaniola
+Honduras;North America;Democratic;Allies;2;false;true;false;United States of Central America
+Kingdom of Hungary;Europe;Non-Aligned;Axis, Allies;3;true;false;true;Austria-Hungary, European Federation, United Kingdoms of Sweden and Hungary
+Iceland;Europe;Democratic;Allies;2;true;true;false;Nordic League
+Iran;Asia;Non-Aligned;Allies;2;true;true;false;Persian Empire
+Iraq;Asia;Non-Aligned;Allies;2;true;true;false;Arabia
+Ireland;Europe;Democratic;None;3;false;true;true;None
+Italy;Europe, Africa;Fascist;Axis, Allies;4;true;true;true;European Federation, Greater Italy, Roman Empire
+Japan;Asia, Oceania;Fascist;Axis;4;true;true;true;None
+Sheikdom of Kuwait;Asia;Non-Aligned;Allies;2;false;true;false;Arabia
+Latvia;Europe;Non-Aligned;None;3;true;true;true;Baltic Federation
+Lebanese Republic;Asia;Democratic;Allies, Axis;2;false;true;false;Arabia
+Liberia;Africa;Democratic;Allies;2;false;true;false;None
+Lithuania;Europe;Non-Aligned;None;3;true;true;false;Baltic Federation, Polish-Lithuanian Commonwealth
+Luxembourg;Europe;Democratic;Allies;2;false;false;true;European Federation, Germany (Reunified), United Netherlands
+Manchukuo;Asia;Fascist;Axis;2;true;true;false;None
+Mengkukuo;Asia;Fascist;Axis;2;false;false;false;None
+Mexico;North America;Non-Aligned;Allies;2;true;true;false;None
+Mongolian People's Republic;Asia;Communist;Allies;2;false;false;false;None
+Sultanate of Muscat and Oman;Asia;Non-Aligned;Allies;2;false;true;false;Arabia
+Nepal;Asia;Non-Aligned;None;2;false;false;false;None
+Netherlands;Europe, South America;Democratic;Allies;3;true;true;true;European Federation, United Netherlands
+New Zealand;Oceania;Democratic;Allies;2;true;true;false;Polynesia
+Nicaragua;North America;Non-Aligned;Allies;2;false;true;false;United States of Central America
+Norway;Europe;Democratic;Allies;3;true;true;true;Nordic League, North Sea Federation, Scandinavia
+Mandatory Palestine;Asia;Non-Aligned;Allies;2;false;true;false;Arabia
+Panama;North America;Democratic;Allies;2;false;true;false;Gran Colombia
+Republic of Paraguay;South America;Democratic;Allies;2;true;false;false;None
+Peru;South America;Fascist;Allies;2;false;true;false;Gran Colombia, Peru-Bolivian Confederation
+Philippines;Asia;Democratic;Allies;2;false;true;false;None
+Poland;Europe;Non-Aligned;Allies;3;true;true;true;Polish-Lithuanian Commonwealth
+Portugal;Europe, Africa, Asia;Non-Aligned;None;2;true;true;true;None
+Romania;Europe;Democratic;Axis, Allies;3;true;true;true;None
+Saudi Arabia;Asia;Non-Aligned;Allies;2;false;true;false;Arabia
+Shanxi;Asia;Non-Aligned;Allies;2;true;false;false;None
+Kingdom of Siam;Asia;Non-Aligned;Axis;2;false;true;false;Rattanakosin Kingdom
+Sinkiang;Asia;Communist;Allies;2;true;false;false;Turkestan
+South Africa;Africa;Democratic;Allies;2;true;true;false;Mutapa
+Soviet Union;Europe, Asia;Communist;Allies;3;true;true;true;None
+Spain;Europe, Africa;Democratic;None;3;true;true;true;None
+Republic of Syria;Asia;Democratic;Allies, Axis;2;false;true;false;Arabia
+Sweden;Europe;Democratic;None;3;true;true;true;Eternal Nordic Empire, Nordic League, Scandinavia
+Switzerland;Europe;Democratic;None;3;true;false;true;Alpine Confederation
+Tannu Tuva;Asia;Communist;None;2;false;false;false;Siberia, Turkestan
+Tibet;Asia;Non-Aligned;None;2;false;false;false;None
+Emirate of Transjordan;Asia;Non-Aligned;Allies;2;false;true;false;Arabia
+Turkey;Asia;Non-Aligned;Allies;3;true;true;true;Ottoman Empire, Turan
+United Kingdom;Europe, North America, South America, Africa, Asia, Oceania;Democratic;Allies;4;true;true;true;European Federation
+United States;North America, Oceania;Democratic;Allies;4;true;true;true;Confederated States of America
+Uruguay;South America;Democratic;Allies;2;true;true;false;Federal League
+Venezuela;South America;Fascist;Allies;2;false;true;false;Gran Colombia
+Xibei San Ma;Asia;Non-Aligned;Allies;2;true;false;false;None
+Yemen;Asia;Non-Aligned;None;2;false;true;false;Arabia
+Yugoslavia;Europe;Non-Aligned;Axis, Allies;3;true;true;true;None
+Yunnan;Asia;Non-Aligned;Allies;2;true;false;false;None

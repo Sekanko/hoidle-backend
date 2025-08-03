@@ -1,0 +1,4 @@
+rootProject.name = 'hoidle-data-updater'
+
+include('hoidle-data')
+project(':hoidle-data').projectDir = new File(settingsDir,'../hoidle-data')

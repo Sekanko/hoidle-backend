@@ -1,0 +1,5 @@
+rootProject.name = 'hoidle-user-management'
+
+include 'hoidle-data'
+
+project(':hoidle-data').projectDir = new File(settingsDir, '../hoidle-data')

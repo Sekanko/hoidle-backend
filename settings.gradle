@@ -1,0 +1,7 @@
+rootProject.name = 'Hoidle'
+
+include 'hoidle-data', 'hoidle-data-updater', 'hoidle-game-logic', 'hoidle-user-management'
+project(':hoidle-data').projectDir = new File(settingsDir, 'hoidle-data')
+project(':hoidle-data-updater').projectDir = new File(settingsDir, 'hoidle-data-updater')
+project(':hoidle-game-logic').projectDir = new File(settingsDir, 'hoidle-game-logic')
+project(':hoidle-user-management').projectDir = new File(settingsDir, 'hoidle-user-management')
