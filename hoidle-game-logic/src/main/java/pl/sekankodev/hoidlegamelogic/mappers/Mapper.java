@@ -16,11 +16,13 @@ public class Mapper {
                 .setContinents(country.getContinents())
                 .setIdeology(country.getIdeology())
                 .setHistoricalFaction(country.getHistoricalFactions())
-                .setResearchSlotsNumber(country.getResearchSlotsNumber())
                 .setNationalFocusTree(country.isNationalFocusTree())
                 .setAccessToTheSea(country.isAccessToTheSea())
-                .setResearchedTrain(country.isResearchedTrain())
-                .setFormableNation(country.getFormableNations());
+                .setResearchedTrain(country.isTrainResearched())
+                .setFormableNation(country.getFormableNations())
+                .setStability(country.getStability())
+                .setCivilianFactories(country.getCivilianFactories())
+                .setUrl(country.getUrl());
     }
 
     public static HoidleDailyCountryDTO mapHoidleDailyCountry(HoidleDailyCountry country) {

@@ -15,8 +15,10 @@ public class Hoi4CountryDTO {
     private Ideology ideology;
     private List<Faction> historicalFaction;
     private List<String> formableNation;
-    private byte researchSlotsNumber;
     private boolean nationalFocusTree;
     private boolean accessToTheSea;
     private boolean researchedTrain;
+    private int stability;
+    private int civilianFactories;
+    private String url;
 }

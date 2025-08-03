@@ -21,10 +21,12 @@ public class CountryMapper implements IMap<Hoi4CountryDTO, Hoi4Country> {
                 .setContinents(convertListToEnum(dtoEntity.getContinents(), Continent.class))
                 .setHistoricalFactions(convertListToEnum(dtoEntity.getHistoricalFactions(), Faction.class))
                 .setFormableNations(dtoEntity.getFormableNations())
-                .setResearchSlotsNumber(dtoEntity.getResearchSlotsNumber())
                 .setNationalFocusTree(dtoEntity.hasNationalFocusTree())
                 .setAccessToTheSea(dtoEntity.hasAccessToTheSea())
-                .setResearchedTrain(dtoEntity.hasResearchedTrain());
+                .setTrainResearched(dtoEntity.hasResearchedTrain())
+                .setStability(dtoEntity.getStability())
+                .setCivilianFactories(dtoEntity.getCivilianFactories())
+                .setUrl(dtoEntity.getUrl());
     }
     private <T extends Enum<T>> List<T> convertListToEnum (List<String> inputList, Class<T> enumType){
         return inputList.stream()

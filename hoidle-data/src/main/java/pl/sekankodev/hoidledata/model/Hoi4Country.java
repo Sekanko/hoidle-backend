@@ -18,22 +18,26 @@ public class Hoi4Country {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    @Enumerated(EnumType.STRING)
-    private Ideology ideology;
 
     @ElementCollection
     @Enumerated(EnumType.STRING)
     private List<Continent> continents;
 
+    @Enumerated(EnumType.STRING)
+    private Ideology ideology;
+
     @ElementCollection
     @Enumerated(EnumType.STRING)
     private List<Faction> historicalFactions;
 
-    @ElementCollection
-    private List<String> formableNations;
+    private int stability;
 
-    private byte researchSlotsNumber;
     private boolean nationalFocusTree;
     private boolean accessToTheSea;
-    private boolean researchedTrain;
+    private boolean trainResearched;
+
+    @ElementCollection
+    private List<String> formableNations;
+    int civilianFactories;
+    private String url;
 }

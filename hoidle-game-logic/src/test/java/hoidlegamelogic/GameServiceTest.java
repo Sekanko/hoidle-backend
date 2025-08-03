@@ -90,12 +90,13 @@ public class GameServiceTest {
                 .setIdeology(Ideology.FASCIST)
                 .setContinents(List.of(Continent.OCEANIA, Continent.ASIA))
                 .setAccessToTheSea(true)
-                .setResearchedTrain(true)
+                .setTrainResearched(true)
                 .setFormableNations(List.of("None"))
                 .setHistoricalFactions(List.of(Faction.AXIS))
                 .setNationalFocusTree(true)
-                .setResearchSlotsNumber((byte) 3);
-
+                .setStability(1)
+                .setCivilianFactories(20)
+                .setUrl("thi is url");
         HoidleDailyCountry todaysCountry = new HoidleDailyCountry();
         todaysCountry.setCountry(hoi4Country);
 
@@ -113,7 +114,9 @@ public class GameServiceTest {
                 .setFormableNation(List.of("None"))
                 .setNationalFocusTree(true)
                 .setResearchedTrain(true)
-                .setResearchSlotsNumber((byte) 3);
+                .setStability(1)
+                .setCivilianFactories(20)
+                .setUrl("thi is not correct url");
 
         List<Colors> expectedResult = List.of(
                 Colors.RED,
@@ -124,7 +127,9 @@ public class GameServiceTest {
                 Colors.GREEN,
                 Colors.GREEN,
                 Colors.GREEN,
-                Colors.GREEN
+                Colors.GREEN,
+                Colors.GREEN,
+                Colors.RED
         );
 
         List<Colors> result = gameService.guessResult(guess);
@@ -138,11 +143,10 @@ public class GameServiceTest {
                 .setIdeology(Ideology.FASCIST)
                 .setContinents(List.of(Continent.OCEANIA, Continent.ASIA))
                 .setAccessToTheSea(true)
-                .setResearchedTrain(true)
+                .setTrainResearched(true)
                 .setFormableNations(List.of("None"))
                 .setHistoricalFactions(List.of(Faction.AXIS))
-                .setNationalFocusTree(true)
-                .setResearchSlotsNumber((byte) 3);
+                .setNationalFocusTree(true);
 
         Hoi4CountryDTO guess = new Hoi4CountryDTO()
                 .setName("Romania")
@@ -152,8 +156,7 @@ public class GameServiceTest {
                 .setHistoricalFaction(List.of(Faction.ALLIES, Faction.AXIS))
                 .setFormableNation(List.of("None"))
                 .setNationalFocusTree(true)
-                .setResearchedTrain(true)
-                .setResearchSlotsNumber((byte) 3);
+                .setResearchedTrain(true);
 
         HoidleDailyCountry todaysCountry = new HoidleDailyCountry();
         todaysCountry.setCountry(hoi4Country);

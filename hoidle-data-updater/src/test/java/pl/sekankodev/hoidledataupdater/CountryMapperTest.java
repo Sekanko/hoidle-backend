@@ -35,9 +35,12 @@ public class CountryMapperTest {
                 .setResearchedTrain(true)
                 .setNationalFocusTree(true)
                 .setFormableNations(List.of("None"))
-                .setResearchSlotsNumber((byte)3);
+                .setStability(1)
+                .setCivilianFactories(2)
+                .setUrl("TestUrl");
 
         Hoi4Country expectedCountry = new Hoi4Country()
+                .setId(1L)
                 .setName("Romania")
                 .setIdeology(Ideology.DEMOCRATIC)
                 .setContinents(List.of(Continent.EUROPE))
@@ -46,13 +49,14 @@ public class CountryMapperTest {
                         Faction.AXIS
                 ))
                 .setAccessToTheSea(true)
-                .setResearchedTrain(true)
                 .setNationalFocusTree(true)
+                .setTrainResearched(true)
                 .setFormableNations(List.of("None"))
-                .setResearchSlotsNumber((byte)3);
+                .setStability(1)
+                .setCivilianFactories(2)
+                .setUrl("TestUrl");
 
-        var result = countryMapper.toEntity(countryDto);
-
+        var result = countryMapper.toEntity(countryDto).setId(1L);
         assertEquals(result, expectedCountry);
     }
 }

@@ -1,4 +1,4 @@
-rootProject.name = 'Hoidle'
+rootProject.name = 'hoidle-backend'
 
 include 'hoidle-data', 'hoidle-data-updater', 'hoidle-game-logic', 'hoidle-user-management'
 project(':hoidle-data').projectDir = new File(settingsDir, 'hoidle-data')

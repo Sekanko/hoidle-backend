@@ -19,21 +19,24 @@ public class Hoi4CountryDTO {
     private String ideology;
     @CsvCustomBindByName(column = "Historical faction", converter = ToListConverter.class)
     private List<String> historicalFactions;
-    @CsvCustomBindByName(column = "Formable nation", converter = ToListConverter.class)
+    @CsvCustomBindByName(column = "Formable nations", converter = ToListConverter.class)
     private List<String> formableNations;
-    @CsvBindByName(column = "Research slots")
-    private byte researchSlotsNumber;
     @CsvBindByName(column = "National focus tree")
     private boolean nationalFocusTree;
-    @CsvBindByName(column = "Access to the see")
+    @CsvBindByName(column = "Access to the sea")
     private boolean accessToTheSea;
     @CsvBindByName(column = "Train researched")
     private boolean researchedTrain;
+    @CsvBindByName(column = "Stability")
+    private int stability;
+    @CsvBindByName(column = "Civilian Factories")
+    private int civilianFactories;
+    @CsvBindByName(column = "url")
+    private String url;
 
     public boolean hasResearchedTrain() {
         return researchedTrain;
     }
-
     public boolean hasAccessToTheSea() {
         return accessToTheSea;
     }
