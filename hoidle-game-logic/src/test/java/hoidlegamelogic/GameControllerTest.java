@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.http.HttpStatus;
+import pl.sekankodev.hoidledata.model.DailyType;
 import pl.sekankodev.hoidlegamelogic.controllers.GameController;
 import pl.sekankodev.hoidlegamelogic.modelDto.Colors;
 import pl.sekankodev.hoidlegamelogic.modelDto.Hoi4CountryDTO;
@@ -34,9 +35,9 @@ public class GameControllerTest {
         HoidleDailyCountryDTO hoidleDailyCountryDTO = new HoidleDailyCountryDTO();
         hoidleDailyCountryDTO.setCountryName("France");
 
-        when(serviceCatalog.getGameService().getOrSetTodaysCountry()).thenReturn(hoidleDailyCountryDTO);
+        when(serviceCatalog.getGameService().getOrSetCountry(DailyType.CLASSIC)).thenReturn(hoidleDailyCountryDTO);
 
-        var result = gameController.getCountryOfTheDay();
+        var result = gameController.getCountryOfTheDay(DailyType.CLASSIC);
         assertEquals(HttpStatus.OK,result.getStatusCode());
         assertEquals(hoidleDailyCountryDTO, result.getBody());
     }
@@ -56,7 +57,7 @@ public class GameControllerTest {
                 Colors.GREEN
         );
 
-        when(serviceCatalog.getGameService().guessResult(guess)).thenReturn(colors);
+        when(serviceCatalog.getGameService().checkGuessForClassic(guess)).thenReturn(colors);
         var result = gameController.guessResult(guess);
         assertEquals(HttpStatus.OK,result.getStatusCode());
         assertEquals(colors, result.getBody());

@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 import pl.sekankodev.hoidledata.data_exceptions.CountryNotFoundException;
 import pl.sekankodev.hoidledata.data_exceptions.GenericDbException;
 import pl.sekankodev.hoidledata.data_exceptions.NoDrawResultException;
+import pl.sekankodev.hoidledata.model.DailyType;
 import pl.sekankodev.hoidledata.model.Hoi4Country;
 import pl.sekankodev.hoidledata.model.HoidleDailyCountry;
 import pl.sekankodev.hoidledata.repositories.IRepositoryCatalog;
@@ -20,6 +21,7 @@ import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 @Service
 @RequiredArgsConstructor
@@ -27,8 +29,8 @@ public class GameService implements IGameService {
     private final IRepositoryCatalog db;
 
     @Override
-    public List<Colors> guessResult(Hoi4CountryDTO guessedCountry) {
-       String todaysCountryName = getOrSetTodaysCountry().getCountryName();
+    public List<Colors> checkGuessForClassic(Hoi4CountryDTO guessedCountry) {
+       String todaysCountryName = getOrSetCountry(DailyType.CLASSIC).getCountryName();
 
        var fields = Hoi4CountryDTO.class.getDeclaredFields();
 
@@ -84,14 +86,22 @@ public class GameService implements IGameService {
     }
 
     @Override
-    public HoidleDailyCountryDTO getOrSetTodaysCountry() {
+    public boolean checkGuessForBorders(Hoi4CountryDTO guessedCountry) {
+        return getOrSetCountry(DailyType.BORDER).getCountryName().equals(guessedCountry.getName());
+    }
+
+    @Override
+    public HoidleDailyCountryDTO getOrSetCountry(DailyType dailyType) {
         LocalDate today = LocalDate.now(ZoneId.of("Europe/Warsaw"));
-        var todaysCountry = db.getHoidleDailyCountryRepository().findByDate(today);
+        var todaysCountry = db.getHoidleDailyCountryRepository().findByDateAndDailyType(today, dailyType);
 
         if (todaysCountry == null) {
             todaysCountry = new HoidleDailyCountry();
             todaysCountry.setDate(today);
-            var randomHoi4Country = db.getHoi4CountryRepository().getRandomCountry();
+            todaysCountry.setDailyType(dailyType);
+
+            var countryList = db.getHoi4CountryRepository().findAll();
+            var randomHoi4Country = countryList.get(ThreadLocalRandom.current().nextInt(countryList.size()));
 
             if (randomHoi4Country == null) {
                 throw new NoDrawResultException();
@@ -108,4 +118,5 @@ public class GameService implements IGameService {
 
         return Mapper.mapHoidleDailyCountry(todaysCountry);
     }
+
 }

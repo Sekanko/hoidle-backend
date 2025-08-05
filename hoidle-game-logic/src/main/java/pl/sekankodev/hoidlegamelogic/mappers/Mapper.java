@@ -28,7 +28,9 @@ public class Mapper {
     public static HoidleDailyCountryDTO mapHoidleDailyCountry(HoidleDailyCountry country) {
         return new HoidleDailyCountryDTO()
                 .setCountryName(country.getCountry().getName())
-                .setDate(country.getDate());
+                .setDate(country.getDate())
+                .setDailyType(country.getDailyType())
+                .setUrl(country.getCountry().getUrl());
     }
 
     public static <T, R> List<R> mapList(List<T> tList, Function<T,R> mapperFunction){

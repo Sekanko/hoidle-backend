@@ -4,6 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import pl.sekankodev.hoidledata.model.DailyType;
 import pl.sekankodev.hoidlegamelogic.modelDto.Colors;
 import pl.sekankodev.hoidlegamelogic.modelDto.Hoi4CountryDTO;
 import pl.sekankodev.hoidlegamelogic.modelDto.HoidleDailyCountryDTO;
@@ -18,18 +19,20 @@ import java.util.List;
 public class GameController {
     private final IServiceCatalog serviceCatalog;
 
-    @GetMapping("dayCountryOfTheDay")
-    public ResponseEntity<HoidleDailyCountryDTO> getCountryOfTheDay() {
-        return new ResponseEntity<>(serviceCatalog.getGameService().getOrSetTodaysCountry(), HttpStatus.OK);
+    @GetMapping("dayCountryOfTheDay/{dailyType}")
+    public ResponseEntity<HoidleDailyCountryDTO> getCountryOfTheDay(@PathVariable DailyType dailyType) {
+        return new ResponseEntity<>(serviceCatalog.getGameService().getOrSetCountry(dailyType), HttpStatus.OK);
     }
 
-    @CrossOrigin
-    @PostMapping("guessed")
+    @PostMapping("guessClassic")
     public ResponseEntity<List<Colors>> guessResult(@RequestBody Hoi4CountryDTO guessedCountry) {
 
-        var result = serviceCatalog.getGameService().guessResult(guessedCountry);
+        var result = serviceCatalog.getGameService().checkGuessForClassic(guessedCountry);
         return ResponseEntity.ok(result);
     }
 
-
+    @PostMapping("guessBorder")
+    public ResponseEntity<Boolean> guessBorder(@RequestBody Hoi4CountryDTO guessedCountry) {
+        return new ResponseEntity<>(serviceCatalog.getGameService().checkGuessForBorders(guessedCountry), HttpStatus.OK);
+    }
 }

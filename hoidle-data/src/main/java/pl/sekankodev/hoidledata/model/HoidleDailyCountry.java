@@ -17,4 +17,6 @@ public class HoidleDailyCountry {
     @JoinColumn(name = "country_id")
     private Hoi4Country country;
     private LocalDate date;
+    @Enumerated(EnumType.STRING)
+    private DailyType dailyType;
 }

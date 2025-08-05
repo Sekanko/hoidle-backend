@@ -41,7 +41,7 @@ public class SecurityConfig {
                 .csrf(customizer -> customizer.disable())
                 .authorizeHttpRequests(request ->
                         request
-                                .requestMatchers( "/auth/delete", "/game/control/dayCountryOfTheDay").hasRole("ADMIN")
+                                .requestMatchers( "/auth/delete").hasRole("ADMIN")
                                 .requestMatchers("/auth/update").authenticated()
                                 .anyRequest().permitAll()
                 )
