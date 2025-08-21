@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>pl.sekankodev</groupId>
-    <artifactId>hoidle-backend</artifactId>
-    <version>2.0.0-SNAPSHOT</version>
-    <name>hoidle-backend</name>
-    <description>hoidle-backend</description>
+    <artifactId>data</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>data</name>
+    <description>data</description>
     <url/>
     <licenses>
         <license/>
@@ -33,10 +33,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
         <dependency>
@@ -64,9 +60,7 @@
             </plugin>
         </plugins>
     </build>
-    <packaging>pom</packaging>
-    <modules>
-        <module>data</module>
-    </modules>
+
+    <packaging>jar</packaging>
 
 </project>
