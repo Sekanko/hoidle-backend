@@ -1,0 +1,92 @@
+Name;Continents;Ideology;Historical faction;Stability;National focus tree;Access to the sea;Train researched;Formable nations;Civilian Factories;url
+Kingdom of Afghanistan;Asia;Non-Aligned;None;56;true;false;false;Persian Empire;2;Afganistan.png
+Albanian Kingdom;Europe;Non-Aligned;None;65;false;true;false;None;2;Albania.png
+Argentina;South America;Non-Aligned;None;39;true;true;true;None;11;Argentyna.png
+Sultanate of Aussa;Africa;Non-Aligned;None;61;true;false;false;Horn of Africa;0;Aussa.png
+Australia;Oceania;Democratic;Allies;84;true;true;true;None;11;Australia.png
+Austria;Europe;Non-Aligned;None;52;true;false;true;Austria-Hungary, European Federation, Holy Roman Empire;10;Austria.png
+Belgian Congo;Africa;Non-Aligned;Allies;27;true;true;true;East Africa, Latin Africa;1;Bongo.png
+Belgium;Europe;Democratic;Allies;62;true;true;true;European Federation;11;Belgia.png
+Bhutan;Asia;Non-Aligned;None;95;false;false;false;None;2;Moszak.png
+Bolivian Republic;South America;Democratic;Allies;28;false;false;false;Plurinational State of Bolivia, Peru-Bolivian Confederation;6;Boliwia.png
+Second Brazilian Republic;South America;Democratic;Allies;34;true;true;true;None;15;Numero uno rasiste.png
+British Burma;Asia;Democratic;Allies;60;false;true;false;None;3;Birma.png
+British Malaya;Asia;Democratic;Allies;54;false;true;false;Greater Indonesian Confederacy;1;Malaje.png
+British Raj;Asia;Non-Aligned;Allies;52;true;true;true;None;11;Raj podatkowy.png
+Bulgaria;Europe;Non-Aligned;Allies, Axis;38;true;true;true;None;11;Bułgaria.png
+Dominion of Canada;North America;Democratic;Allies;89;true;true;true;None;13;Kanada.png
+Chile;South America, Oceania;Democratic;Allies;21;true;true;true;None;8;Czile.png
+China;Asia;Non-Aligned;Allies;35;true;true;true;None;21;Taiwan.png
+Columbia;South America;Democratic;Allies;64;false;true;false;Gran Colombia;7;Kolumbia.png
+Communist China;Asia;Communist;Allies;57;true;false;false;None;3;Chiny.png
+Costa Rica;North America;Democratic;Allies;64;false;true;false;United States of Central America;2;Kostaryka.png
+Cuba;North America;Democratic;Allies;64;false;true;false;Antillean Confederation;3;Yuuma.png
+Czechoslovakia;Europe;Democratic;Allies;39;true;false;true;Austria-Hungary;16;Czechosłowacja.png
+Denmark;Europe, North America;Democratic;Axis;73;true;true;true;Baltic Sea Republic, Nordic League, North Sea Federation, Scandinavia;8;Dania.png
+Dominican Republic;North America;Fascist;Allies;65;false;true;false;Antillean Confederation, Hispaniola;3;Dominika.png
+Dutch East Indies;Asia, Oceania;Non-Aligned;Allies;57;false;true;false;Greater Indonesian Confederacy;1;Indonezja.png
+Ecuador;South America;Democratic;Allies;65;false;true;false;Gran Colombia;5;Ekwador.png
+El Salvador;North America;Fascist;Allies;65;false;true;false;United States of Central America;2;Salvador.png
+Estonia;Europe;Non-Aligned;None;33;true;true;true;Baltic Federation, Nordic League;4;Estonia.png
+Ethiopia;Africa;Non-Aligned;Allies;29;true;false;true;Aksumite Empire, Empire of Solomon, Empire of Zion, Horn of Africa;2;Etiopia.png
+Finland;Europe;Non-Aligned;Allies, Axis;49;true;true;true;Nordic League;7;Finlandia.png
+France;Europe, Africa, North America, South America, Asia, Oceania;Democratic;Allies, Axis;49;true;true;true;European Federation;32;Francja.png
+German Reich;Europe;Fascist;Axis;81;true;true;true;European Federation, Greater Germanic Reich, Greater German Proletarian State, Holy Roman Empire;35;Niemcy.png
+Kingdom of Greece;Europe;Non-Aligned;Allies;39;true;true;false;Byzantine Empire, Hellas, Macedonian Empire;7;Grecja.png
+Guangxi Clique;Asia;Non-Aligned;Allies;60;true;true;false;None;6;Klikazguangsi.png
+Guatemala;North America;Non-Aligned;Allies;60;false;true;false;United States of Central America;2;Gwatemala.png
+Haiti;North America;Democratic;Allies;65;false;true;false;Antillean Confederation, Hispaniola;2;Haiti.png
+Honduras;North America;Democratic;Allies;65;false;true;false;United States of Central America;2;Honduras.png
+Kingdom of Hungary;Europe;Non-Aligned;Allies, Axis;41;true;false;true;Austria-Hungary, European Federation, United Kingdoms of Sweden and Hungary;10;Węgry.png
+Iceland;Europe;Democratic;Allies;64;true;true;false;Nordic League;1;Islandia.png
+Iran;Asia;Non-Aligned;Allies;49;true;true;false;Persian Empire;4;Iran.png
+Iraq;Asia;Non-Aligned;Allies;36;true;true;false;Arabia;2;Irak.png
+Ireland;Europe;Democratic;None;64;false;true;true;None;8;Irlandia.png
+Italy;Europe, Africa;Fascist;Allies, Axis;42;true;true;true;European Federation, Greater Italy, Roman Empire;21;Italia.png
+Japan;Asia, Oceania;Fascist;Axis;95;true;true;true;None;23;Japonia.png
+Sheikdom of Kuwait;Asia;Non-Aligned;Allies;58;false;true;false;Arabia;0;Kuwejt.png
+Latvia;Europe;Non-Aligned;None;25;true;true;true;Baltic Federation;7;Łotwa.png
+Lebanese Republic;Asia;Democratic;Allies, Axis;57;false;true;false;Arabia;1;Liban.png
+Liberia;Africa;Democratic;Allies;65;false;true;false;None;1;Liberia.png
+Lithuania;Europe;Non-Aligned;None;40;true;true;false;Baltic Federation, Polish-Lithuanian Commonwealth;5;Litwa.png
+Luxembourg;Europe;Democratic;Allies;80;false;false;true;European Federation, Germany (Reunified), United Netherlands;3;Luksemburg.png
+Manchukuo;Asia;Fascist;Axis;2;true;true;false;None;1;Chwała dynastii Qing.png
+Mengkukuo;Asia;Fascist;Axis;62;false;false;false;None;1;Menguku.png
+Mexico;North America;Non-Aligned;Allies;22;true;true;false;None;8;Meksyk.png
+Mongolian People's Republic;Asia;Communist;Allies;65;false;false;false;None;3;Mogolia.png
+Sultanate of Muscat and Oman;Asia;Non-Aligned;Allies;95;false;true;false;Arabia;1;Oman.png
+Nepal;Asia;Non-Aligned;None;95;false;false;false;None;2;Nepal.png
+Netherlands;Europe, South America;Democratic;Allies;78;true;true;true;European Federation, United Netherlands;11;Holandia.png
+New Zealand;Oceania;Democratic;Allies;95;true;true;false;Polynesia;4;Nowa Zelandia.png
+Nicaragua;North America;Non-Aligned;Allies;60;false;true;false;United States of Central America;2;Nikaragua.png
+Norway;Europe;Democratic;Allies;79;true;true;true;Nordic League, North Sea Federation, Scandinavia;7;No way.png
+Mandatory Palestine;Asia;Non-Aligned;Allies;59;false;true;false;Arabia;1;Palestyna.png
+Panama;North America;Democratic;Allies;65;false;true;false;Gran Colombia;2;Panama.png
+Republic of Paraguay;South America;Democratic;Allies;25;true;false;false;None;3;Paragwaj.png
+Peru;South America;Fascist;Allies;57;false;true;false;Gran Colombia, Peru-Bolivian Confederation;8;Peru.png
+Philippines;Asia;Democratic;Allies;59;false;true;false;None;5;Pawełiny.png
+Poland;Europe;Non-Aligned;Allies;50;true;true;true;Polish-Lithuanian Commonwealth;17;Polska.png
+Portugal;Europe, Africa, Asia;Non-Aligned;None;84;true;true;true;None;11;Portugalia.png
+Romania;Europe;Democratic;Allies, Axis;69;true;true;true;None;11;Rumunia.png
+Saudi Arabia;Asia;Non-Aligned;Allies;65;false;true;false;Arabia;1;Arabia.png
+Shanxi;Asia;Non-Aligned;Allies;70;true;false;false;None;3;Szanksi.png
+Kingdom of Siam;Asia;Non-Aligned;Axis;62;false;true;false;Rattanakosin Kingdom;5;Syjam.png
+Sinkiang;Asia;Communist;Allies;50;true;false;false;Turkestan;4;Sinkiang.png
+South Africa;Africa;Democratic;Allies;71;true;true;false;Mutapa;9;Południowa Afryka.png
+Soviet Union;Europe, Asia;Communist;Allies;28;true;true;true;None;46;ZSRR.png
+Spain;Europe, Africa;Democratic;None;35;true;true;true;None;16;Voltaren.png
+Republic of Syria;Asia;Democratic;Allies, Axis;57;false;true;false;Arabia;0;Syria.png
+Sweden;Europe;Democratic;None;83;true;true;true;Eternal Nordic Empire, Nordic League, Scandinavia;9;John Paradox.png
+Switzerland;Europe;Democratic;None;100;true;false;true;Alpine Confederation;8;REDACTED.png
+Tannu Tuva;Asia;Communist;None;65;false;false;false;Siberia, Turkestan;1;Co.png
+Tibet;Asia;Non-Aligned;None;65;false;false;false;None;2;Tybet.png
+Emirate of Transjordan;Asia;Non-Aligned;Allies;57;false;true;false;Arabia;1;Jordania.png
+Turkey;Asia;Non-Aligned;Allies;89;true;true;true;Ottoman Empire, Turan;11;Nie-kurdystan.png
+United Kingdom;Europe, North America, South America, Africa, Asia, Oceania;Democratic;Allies;89;true;true;true;European Federation;30;UK.png
+United States;North America, Oceania;Democratic;Allies;94;true;true;true;Confederated States of America;130;USA.png
+Uruguay;South America;Democratic;Allies;46;true;true;false;Federal League;6;Urugwaj.png
+Venezuela;South America;Fascist;Allies;62;false;true;false;Gran Colombia;7;Wenezuela.png
+Xibei San Ma;Asia;Non-Aligned;Allies;50;true;false;false;None;5;Ksibeisanma.png
+Yemen;Asia;Non-Aligned;None;95;false;true;false;Arabia;1;Jemen.png
+Yugoslavia;Europe;Non-Aligned;Allies, Axis;39;true;true;true;None;15;Jugosławia.png
+Yunnan;Asia;Non-Aligned;Allies;47;true;false;false;None;3;Yuuma 2.png
