@@ -3,16 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.5</version>
-        <relativePath/>
+        <groupId>pl.sekankodev</groupId>
+        <artifactId>hoidle-backend</artifactId>
+        <version>2.0.1</version>
     </parent>
-    <groupId>pl.sekankodev</groupId>
     <artifactId>data</artifactId>
-    <version>2.0.0</version>
     <name>data</name>
-    <description>data</description>
+    <description>Module that contains entities and repositories</description>
     <url/>
     <licenses>
         <license/>
@@ -46,20 +43,16 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <scope>annotationProcessor</scope>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
     <packaging>jar</packaging>
 

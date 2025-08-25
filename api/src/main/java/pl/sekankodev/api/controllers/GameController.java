@@ -13,16 +13,17 @@ import java.util.Map;
 @RequestMapping("/game")
 @RestController
 @RequiredArgsConstructor
+@CrossOrigin
 public class GameController {
     private final GameService gameService;
 
-    @PostMapping("/guess/classic")
+    @PostMapping("/guess/classicMode")
     public ResponseEntity<Map<String, ResponseColor>> guessClassic(@RequestBody Hoi4Country country){
         return ResponseEntity.ok(gameService.guessClassic(country));
     }
 
     @PostMapping("/guess/{gameMode}")
-    public ResponseEntity<Boolean> checkGuessAnyGameMode(@PathVariable GameMode gameMode, @RequestBody Hoi4Country country){
+    public ResponseEntity<Boolean> checkGuessAnyGameMode(@PathVariable("gameMode") GameMode gameMode, @RequestBody Hoi4Country country){
         return ResponseEntity.ok(gameService.isGuessedCountryCorrect(country, gameMode));
     }
 

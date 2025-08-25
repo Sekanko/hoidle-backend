@@ -2,10 +2,7 @@ package pl.sekankodev.api.controllers;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import pl.sekankodev.api.services.DataService;
 import pl.sekankodev.data.models.Hoi4Country;
 
@@ -14,6 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/data")
 @RequiredArgsConstructor
+@CrossOrigin
 public class DataController {
     private final DataService dataService;
 
