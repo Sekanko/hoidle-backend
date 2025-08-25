@@ -63,15 +63,23 @@ public class GameService implements IGameService {
                    result.add(Colors.GREEN);
                } else if (List.class.isAssignableFrom(field.getType())) {
                    List<?> guessedList = (List<?>) guessedCountryField;
-                   List<?> todasDailyList = (List<?>) hoi4CountryField;
+                   List<?> todaysDailyList = (List<?>) hoi4CountryField;
 
                    boolean hasCommon = guessedList.stream()
-                           .anyMatch(todasDailyList::contains);
+                           .anyMatch(todaysDailyList::contains);
 
                    if (hasCommon) {
                        result.add(Colors.ORANGE);
                    } else {
                        result.add(Colors.RED);
+                   }
+               } else if(field.getType().equals(int.class)) {
+                   int guessedIntValue = (Integer) guessedCountryField;
+                   int todaysIntValue = (Integer) hoi4CountryField;
+                   if (guessedIntValue > todaysIntValue) {
+                       result.add(Colors.LOWER_RED);
+                   } else if (guessedIntValue < todaysIntValue) {
+                       result.add(Colors.UPPER_RED);
                    }
                } else {
                    result.add(Colors.RED);

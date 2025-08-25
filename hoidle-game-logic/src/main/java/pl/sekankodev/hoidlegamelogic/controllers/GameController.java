@@ -10,6 +10,8 @@ import pl.sekankodev.hoidlegamelogic.modelDto.Hoi4CountryDTO;
 import pl.sekankodev.hoidlegamelogic.modelDto.HoidleDailyCountryDTO;
 import pl.sekankodev.hoidlegamelogic.services.IServiceCatalog;
 
+import java.lang.reflect.Field;
+import java.util.Arrays;
 import java.util.List;
 
 @RestController
@@ -34,5 +36,15 @@ public class GameController {
     @PostMapping("guessBorder")
     public ResponseEntity<Boolean> guessBorder(@RequestBody Hoi4CountryDTO guessedCountry) {
         return new ResponseEntity<>(serviceCatalog.getGameService().checkGuessForBorders(guessedCountry), HttpStatus.OK);
+    }
+
+    @GetMapping("getCountryFields")
+    public ResponseEntity<List<String>> getField(){
+        return ResponseEntity.ok(
+                Arrays.stream(
+                        Hoi4CountryDTO.class.getDeclaredFields())
+                        .map(Field::getName)
+                        .filter(s -> !s.equals("url"))
+                        .toList());
     }
 }
