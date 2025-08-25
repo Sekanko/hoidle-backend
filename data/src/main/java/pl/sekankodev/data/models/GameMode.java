@@ -1,5 +1,5 @@
 package pl.sekankodev.data.models;
 
-public enum DailyType {
+public enum GameMode {
     CLASSIC, BORDER
 }

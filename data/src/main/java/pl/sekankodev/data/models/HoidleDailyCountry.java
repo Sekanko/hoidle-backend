@@ -18,5 +18,5 @@ public class HoidleDailyCountry {
     private Hoi4Country country;
     private LocalDate date;
     @Enumerated(EnumType.STRING)
-    private DailyType dailyType;
+    private GameMode gameMode;
 }
