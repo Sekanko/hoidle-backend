@@ -3,7 +3,7 @@ package pl.sekankodev.api;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-import pl.sekankodev.api.dtos.HoidleDailyCountryDto;
+import pl.sekankodev.api.models.HoidleDailyCountryDto;
 import pl.sekankodev.api.mappers.HoidleDailyCountryMapper;
 import pl.sekankodev.api.services.DataService;
 import pl.sekankodev.data.models.GameMode;

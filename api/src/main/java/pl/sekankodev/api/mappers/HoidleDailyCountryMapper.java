@@ -1,7 +1,7 @@
 package pl.sekankodev.api.mappers;
 
 import org.springframework.stereotype.Component;
-import pl.sekankodev.api.dtos.HoidleDailyCountryDto;
+import pl.sekankodev.api.models.HoidleDailyCountryDto;
 import pl.sekankodev.data.models.HoidleDailyCountry;
 
 @Component

@@ -3,7 +3,7 @@ package pl.sekankodev.api.services;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.Validate;
 import org.springframework.stereotype.Service;
-import pl.sekankodev.api.dtos.HoidleDailyCountryDto;
+import pl.sekankodev.api.models.HoidleDailyCountryDto;
 import pl.sekankodev.api.mappers.HoidleDailyCountryMapper;
 import pl.sekankodev.data.models.Hoi4Country;
 import pl.sekankodev.data.models.HoidleDailyCountry;
@@ -24,6 +24,12 @@ public class DataService {
     private final Hoi4CountryRepository hoi4CountryRepository;
     private final HoidleDailyCountryRepository dailyCountryRepository;
     private final HoidleDailyCountryMapper dailyCountryMapper;
+
+    public Hoi4Country getHoi4CountryByName(String name){
+        Hoi4Country country = hoi4CountryRepository.findByName(name);
+        Validate.notNull(country, "Couldn't find country with name " + name);
+        return country;
+    }
 
     public List<Hoi4Country> getAllHoi4Countries(){
         List<Hoi4Country> countries = hoi4CountryRepository.findAll();
@@ -51,5 +57,10 @@ public class DataService {
         }
 
         return dailyCountryMapper.toDto(dailyCountry);
+    }
+
+    public String getDailyBorderUrl(){
+        var country = getOrSetDailyCountryByGameMode(GameMode.BORDER);
+        return country.getUrl();
     }
 }

@@ -1,4 +1,4 @@
-package pl.sekankodev.api.dtos;
+package pl.sekankodev.api.models;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
