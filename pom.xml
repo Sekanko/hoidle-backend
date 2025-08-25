@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>pl.sekankodev</groupId>
     <artifactId>hoidle-backend</artifactId>
-    <version>2.0.0-SNAPSHOT</version>
+    <version>2.0.0</version>
     <name>hoidle-backend</name>
     <description>hoidle-backend</description>
 

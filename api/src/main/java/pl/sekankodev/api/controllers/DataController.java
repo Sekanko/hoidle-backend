@@ -3,6 +3,7 @@ package pl.sekankodev.api.controllers;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import pl.sekankodev.api.services.DataService;
@@ -26,9 +27,16 @@ public class DataController {
         return ResponseEntity.ok(dataService.getFieldOfHoi4Country());
     }
 
-    @GetMapping("dailyBorderUrl")
-    public  ResponseEntity<String> getDailyBorderUrl(){
+    @GetMapping("/dailyBorderUrl")
+    public ResponseEntity<String> getDailyBorderUrl(){
         return ResponseEntity.ok(dataService.getDailyBorderUrl());
     }
+
+    @PostMapping("/internalUpdate")
+    public ResponseEntity<Void> internalDataUpdate(){
+        dataService.updateFromCsv();
+        return ResponseEntity.noContent().build();
+    }
+
 
 }

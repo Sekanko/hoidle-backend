@@ -39,13 +39,19 @@ public class GameService {
             try {
                 field.setAccessible(true);
 
+                String fieldName = field.getName();
+
+                if (fieldName.equals("id") || fieldName.equals("url")){
+                    field.setAccessible(false);
+                    return;
+                }
+
                 var guessField = field.get(guessCountry);
                 var dailyField = field.get(dailyHoi4Country);
 
                 Validate.notNull(guessField, "Guessed country has fields with null values");
                 Validate.notNull(dailyField, "Daily country has fields with null values");
 
-                String fieldName = field.getName();
                 var fieldType = field.getType();
 
                 if (guessField.equals(dailyField)){

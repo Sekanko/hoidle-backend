@@ -1,8 +1,8 @@
 package pl.sekankodev.data.repositories;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import pl.sekankodev.data.models.GameMode;
 import pl.sekankodev.data.models.HoidleDailyCountry;
-import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.time.LocalDate;
 

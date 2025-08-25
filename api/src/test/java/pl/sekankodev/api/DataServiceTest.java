@@ -3,8 +3,9 @@ package pl.sekankodev.api;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-import pl.sekankodev.api.models.HoidleDailyCountryDto;
+import pl.sekankodev.api.mappers.Hoi4CountryMapper;
 import pl.sekankodev.api.mappers.HoidleDailyCountryMapper;
+import pl.sekankodev.api.models.HoidleDailyCountryDto;
 import pl.sekankodev.api.services.DataService;
 import pl.sekankodev.data.models.GameMode;
 import pl.sekankodev.data.models.Hoi4Country;
@@ -26,13 +27,16 @@ public class DataServiceTest {
     private HoidleDailyCountryRepository dailyCountryRepository;
     private Hoi4CountryRepository hoi4CountryRepository;
     private HoidleDailyCountryMapper dailyCountryMapper;
+    private Hoi4CountryMapper hoi4CountryMapper;
+
 
     @BeforeEach
     public void setUp(){
         dailyCountryRepository = Mockito.mock(HoidleDailyCountryRepository.class);
         hoi4CountryRepository = Mockito.mock(Hoi4CountryRepository.class);
         dailyCountryMapper = Mockito.mock(HoidleDailyCountryMapper.class);
-        this.dataService = new DataService(hoi4CountryRepository, dailyCountryRepository, dailyCountryMapper);
+        hoi4CountryMapper = Mockito.mock(Hoi4CountryMapper.class);
+        dataService = new DataService(hoi4CountryRepository, dailyCountryRepository, dailyCountryMapper, hoi4CountryMapper);
     }
 
     @Test

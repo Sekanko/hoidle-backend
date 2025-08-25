@@ -3,15 +3,19 @@ package pl.sekankodev.api.services;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.Validate;
 import org.springframework.stereotype.Service;
-import pl.sekankodev.api.models.HoidleDailyCountryDto;
+import pl.sekankodev.api.mappers.Hoi4CountryMapper;
 import pl.sekankodev.api.mappers.HoidleDailyCountryMapper;
+import pl.sekankodev.api.models.HoidleDailyCountryDto;
+import pl.sekankodev.data.models.GameMode;
 import pl.sekankodev.data.models.Hoi4Country;
 import pl.sekankodev.data.models.HoidleDailyCountry;
-import pl.sekankodev.data.models.GameMode;
 import pl.sekankodev.data.repositories.Hoi4CountryRepository;
 import pl.sekankodev.data.repositories.HoidleDailyCountryRepository;
+import pl.sekankodev.parser.CsvParser;
 
+import java.io.IOException;
 import java.lang.reflect.Field;
+import java.net.URISyntaxException;
 import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.Arrays;
@@ -24,6 +28,7 @@ public class DataService {
     private final Hoi4CountryRepository hoi4CountryRepository;
     private final HoidleDailyCountryRepository dailyCountryRepository;
     private final HoidleDailyCountryMapper dailyCountryMapper;
+    private final Hoi4CountryMapper hoi4CountryMapper;
 
     public Hoi4Country getHoi4CountryByName(String name){
         Hoi4Country country = hoi4CountryRepository.findByName(name);
@@ -62,5 +67,15 @@ public class DataService {
     public String getDailyBorderUrl(){
         var country = getOrSetDailyCountryByGameMode(GameMode.BORDER);
         return country.getUrl();
+    }
+
+    public void updateFromCsv() {
+        try {
+            var rows = CsvParser.getHoi4CountriesFromCsvFile();
+            List<Hoi4Country> countries = hoi4CountryMapper.fromCsvRowsToEntity(rows);
+            hoi4CountryRepository.saveAll(countries);
+        } catch (URISyntaxException | IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
